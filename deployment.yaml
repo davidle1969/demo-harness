@@ -14,7 +14,7 @@ spec:
         app: local-demo
     spec:
       containers:
-      - image: docker.io/davidle1969/demo-harness:8
+      - image: davidle1969/demo-harness:8
         name: local-demo-container
         ports:
         - containerPort: 80
