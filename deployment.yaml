@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: <+service.name>-deployment
+  name: local-demo-deployment
 spec:
   replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: <+service.name>
+      app: local-demo
   template:
     metadata:
       labels:
-        app: <+service.name>
+        app: local-demo
     spec:
       containers:
       - image: docker.io/davidle1969/demo-harness:latest
-        name: <+service.name>-container
+        name: local-demo-container
         ports:
         - containerPort: 80
