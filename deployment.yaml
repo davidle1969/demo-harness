@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: local-demo-deployment
 spec:
-  replicas: 3
-  revisionHistoryLimit: 3
+  replicas: 1
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: local-demo
